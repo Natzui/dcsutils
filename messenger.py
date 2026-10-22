@@ -175,9 +175,6 @@ async def detect_user(client):
     )
     print(f"Avatar URL       : {user.display_avatar.url}")
     print(f"Profile URL      : https://discord.com/users/{user.id}")
-    print("Profile Bio      : Not available through the standard bot API")
-    print("Banner           : Not available through the standard bot API")
-    print("Email / IP / Login History: Not available")
     print("==============================================\n")
 
 
@@ -194,9 +191,9 @@ async def main():
                 print()
                 print(" Ataraxia Messaging Terminal")
                 print()
-                print("1. Send a direct threat message")
+                print("1. Send a direct message")
                 print("2. Send a broadcast message")
-                print("3. Doxx user information")
+                print("3. Find user information")
                 print("4. Exit")
 
                 choice = (await get_input("Choose an option: ")).strip()
